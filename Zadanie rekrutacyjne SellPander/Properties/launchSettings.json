@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Zadanie_rekrutacyjne_SellPander": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7265",
+      "launchBrowser": false
+    }
+  }
+}
