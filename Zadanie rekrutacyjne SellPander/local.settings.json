@@ -1,0 +1,9 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "X-FAIRE-ACCESS-TOKEN": "your_faire_access_token",
+    "X-BLToken": "your_baselinker_token"
+  }
+}
