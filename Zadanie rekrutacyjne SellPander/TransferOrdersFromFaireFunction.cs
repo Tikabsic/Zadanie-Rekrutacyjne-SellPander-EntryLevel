@@ -74,8 +74,10 @@ namespace Zadanie_rekrutacyjne_SellPander
         private List<string> GetExistingFaireOrdersInBaselinker(string baselinkerToken)
         {
             var apiMethod = "getOrderSources";
-            var sourceId = "1024";
-
+            var methodParams = new
+            {
+                filter_order_source_id = "1024"
+            };
             var restClient = new RestClient("https://api.baselinker.com/connector.php");
             var request = new RestRequest("POST");
             request.AddHeader("X-BLToken", $"{baselinkerToken}");
@@ -83,7 +85,7 @@ namespace Zadanie_rekrutacyjne_SellPander
             var requestBody = new
             {
                 method = apiMethod,
-                parameters = sourceId
+                parameters = methodParams
             };
 
             request.AddJsonBody(requestBody);
